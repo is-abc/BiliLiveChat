@@ -115,7 +115,7 @@ const method = {
     setInterval(() => {
       if (method.data.getAudio().paused) {
         if (method.tts.get().length) {
-          $("#au").attr('src', "http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text=" + method.tts.get()[0]);
+          $("#au").attr('src', "//tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text=" + method.tts.get()[0]);
           method.data.getAudio().play()
           //	  var player=$("#au")[0];
           //	 if (player.paused){ /*如果已经暂停*/
